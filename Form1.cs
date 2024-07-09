@@ -10,11 +10,12 @@ namespace DCIT318Assignment4
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
-            MessageBox.Show($"Username: {username}\nPassword: {password}");
+            string name = txtName.Text;
+            string email = txtEmail.Text;
+            string phone = txtPhone.Text;
+            MessageBox.Show($"Name: {name}\nEmail: {email}\nPhone: {phone}");
         }
     }
 }

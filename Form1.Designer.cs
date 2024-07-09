@@ -2,65 +2,63 @@ namespace DCIT318Assignment4
 {
     partial class Form1
     {
-        private System.ComponentModel.IContainer components = null;
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
         private void InitializeComponent()
         {
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtUsername
+            // txtName
             // 
-            this.txtUsername.Location = new System.Drawing.Point(100, 50);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(200, 22);
-            this.txtUsername.TabIndex = 0;
+            this.txtName.Location = new System.Drawing.Point(100, 50);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(200, 22);
+            this.txtName.TabIndex = 0;
             // 
-            // txtPassword
+            // txtEmail
             // 
-            this.txtPassword.Location = new System.Drawing.Point(100, 100);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(200, 22);
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtEmail.Location = new System.Drawing.Point(100, 100);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(200, 22);
+            this.txtEmail.TabIndex = 1;
             // 
-            // btnLogin
+            // txtPhone
             // 
-            this.btnLogin.Location = new System.Drawing.Point(150, 150);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 30);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.txtPhone.Location = new System.Drawing.Point(100, 150);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(200, 22);
+            this.txtPhone.TabIndex = 2;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(150, 200);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(100, 30);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 300);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtName);
             this.Name = "Form1";
-            this.Text = "Login";
+            this.Text = "Address Book";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.Button btnSave;
     }
 }
